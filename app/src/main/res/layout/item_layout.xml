@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.me.swipeitemrecycler.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src = "@mipmap/ic_launcher"
+        android:layout_width="60dp"
+        android:id = "@+id/image_test"
+        android:layout_height="60dp" />
+    <RelativeLayout
+        android:id = "@+id/layout_item"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <ImageView
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id = "@+id/button"
+            android:src = "@mipmap/ic_launcher"/>
+    </RelativeLayout>
+</com.me.swipeitemrecycler.SwipeLayout>
