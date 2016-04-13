@@ -98,6 +98,6 @@ java代码只要给RecyclerView附上这个辅助类就，实现这个辅助类�
 
 ## 效果图
 
-[![GIFEncoder3.md.gif](http://imgchr.com/images/GIFEncoder3.md.gif)](http://imgchr.com/image/7xd)
+[![GIFEncoder3.gif](http://imgchr.com/images/GIFEncoder3.gif)](http://imgchr.com/image/7xd)
 
 
