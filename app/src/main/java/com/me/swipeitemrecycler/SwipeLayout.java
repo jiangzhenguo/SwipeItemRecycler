@@ -41,6 +41,16 @@ public class SwipeLayout  extends RelativeLayout {
         }
     }
 
+    public boolean isOpen(){
+        if(mCenterView.getScrollX() > 0){
+            return true;
+        } else {
+            return  false;
+        }
+    }
+
+
+
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();

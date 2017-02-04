@@ -19,7 +19,7 @@ public class ItemHelpter implements RecyclerView.OnItemTouchListener,GestureDete
     /**
      * 动画执行的时间
      */
-    private static  int DURATION = 200;
+    private static  int DURATION = 100;
 
     /**
      * item是否子拖动
@@ -297,9 +297,9 @@ public class ItemHelpter implements RecyclerView.OnItemTouchListener,GestureDete
 
         int scrollX = mSwipeLayout.mCenterView.getScrollX();
         int left = mSwipeLayout.mCenterView.getWidth() - scrollX;
-        int top = mSwipeLayout.mCenterView.getTop();
+        int top = mSwipeLayout.mCenterView.getTop() - mSwipeLayout.getTop();
         int right = left + mSwipeLayout.mRightWidth ;
-        int bottom = mSwipeLayout.mCenterView.getBottom();
+        int bottom = mSwipeLayout.mCenterView.getBottom() - mSwipeLayout.getBottom();
         Rect rect = new Rect(left, top, right, bottom);
         return rect.contains(x, y);
     }

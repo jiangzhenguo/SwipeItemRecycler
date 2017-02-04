@@ -44,7 +44,9 @@ public class MyAdapter extends RecyclerView.Adapter implements ItemHelpter.Callb
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         MyViewHolder holder1 = (MyViewHolder)holder;
-
+        if(holder1.root.isOpen()){
+            holder1.root.clearAnimation();
+        }
         holder1.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
